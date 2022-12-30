@@ -6,7 +6,7 @@ function Todo ({todo}) {
     const dispatch = useDispatch();
     return <div key={todo.id} onClick={() => {
         dispatch(toggle(todo.id));
-    }} className=" paper p-2 cursor-pointer">
+    }} className=" paper p-2 max-sm:my-2 cursor-pointer">
         <p className={completed}>{todo.todo}</p>
     </div>
 }
